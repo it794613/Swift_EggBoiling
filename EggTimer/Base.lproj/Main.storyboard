@@ -121,6 +121,19 @@
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJN-th-c5K" userLabel="Timer View">
                                         <rect key="frame" x="0.0" y="571.5" width="374" height="246.5"/>
+                                        <subviews>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="u0W-0d-qZp">
+                                                <rect key="frame" x="42.5" y="121" width="289" height="4"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="289" id="7Pe-yh-mF4"/>
+                                                    <constraint firstAttribute="height" constant="4" id="A8r-xJ-NAO"/>
+                                                </constraints>
+                                            </progressView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="u0W-0d-qZp" firstAttribute="centerX" secondItem="nJN-th-c5K" secondAttribute="centerX" id="D6G-SO-msm"/>
+                                            <constraint firstItem="u0W-0d-qZp" firstAttribute="centerY" secondItem="nJN-th-c5K" secondAttribute="centerY" id="Xir-9C-YxJ"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -135,6 +148,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="progressBar" destination="u0W-0d-qZp" id="mhi-aY-L0k"/>
                         <outlet property="textLable" destination="XLm-5r-pSP" id="g1r-lX-tHS"/>
                     </connections>
                 </viewController>
