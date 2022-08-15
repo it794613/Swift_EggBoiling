@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var textLable: UILabel!
     
     var timer = Timer()
-    let eggSoftness = ["softTime":300, "mediumTime":420, "hardTime":720]
+    let eggSoftness: [String: Int] = ["Soft":300, "Medium":420, "Hard":720]
     // 분은, 초로 무조건 바꿔준다. 초가 기본단위임.
     var secondsRemaining = 60
     
